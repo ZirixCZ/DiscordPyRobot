@@ -1,6 +1,6 @@
 import os
 import discord
-
+TOKEN = "NzI0MDAyODMzMTQ5NDYwNTkx.Xu58Aw.Guk_uwMxOFC5oqcqnzdNoAQcAnU"
 client = discord.Client()
 
 @client.event
@@ -15,4 +15,4 @@ async def on_message(message):
     if message.content == "Hello":
         await client.send_message(message.channel, "World")
 
-TOKEN = os.getenv("NzI0MDAyODMzMTQ5NDYwNTkx.Xu58Aw.Guk_uwMxOFC5oqcqnzdNoAQcAnU")
+client.run(TOKEN)
