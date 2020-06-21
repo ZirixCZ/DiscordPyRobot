@@ -3,7 +3,6 @@ import discord
 from discord.ext import commands
 import random
 
-#this is our secret token ok, dont loose it
 client = discord.Client()
 
 #this will tell us if the bot connected to the server (respektive jestli máme správný token omegalulw)
@@ -25,4 +24,5 @@ async def on_message(message): #this will take the on_message function from disc
     elif message.content == "meme":
         await message.channel.send(random.choice(memes))
 
+#this is our secret token ok, dont loose it
 client.run("NzI0MDAyODMzMTQ5NDYwNTkx.Xu58Aw.Guk_uwMxOFC5oqcqnzdNoAQcAnU") #připojí se na token přes discord api
