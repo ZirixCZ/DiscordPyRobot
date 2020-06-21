@@ -1,5 +1,7 @@
 import os
 import discord
+from discord.ext import commands
+import random
 
 #this is our secret token ok, dont loose it
 TOKEN = "NzI0MDAyODMzMTQ5NDYwNTkx.Xu58Aw.Guk_uwMxOFC5oqcqnzdNoAQcAnU"
