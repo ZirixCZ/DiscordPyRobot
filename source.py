@@ -15,7 +15,7 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send('world')
 
-@client.command(aliases=["GH", "gh"])
+@client.command(aliases=["GH", "gh", "github", "Github", "Gh"])
 async def GitHub(ctx):
     await ctx.send('https://github.com/ZirixCZ/DiscordPyRobot')
 
@@ -23,6 +23,10 @@ async def GitHub(ctx):
 async def meme(ctx):
     memes = ["69","420","https://imgur.com/a/C6sONwG"] #memes pro random choice
     await ctx.send(random.choice(memes))
+
+@client.command(aliases=["Getmehelp", "gmh", "Gmh"]) #help prikaz keby chceli vidiet commandy
+async def GetMeHelp(ctx):
+    await ctx.send("`Github = ukáže link na GitHub repository\n meme = náhodny meme`")
 
 #this is our secret token ok, dont loose it
 client.run("NzI0MDAyODMzMTQ5NDYwNTkx.XvJxIg.4HqXv_UrDykJzPF-8NY0WNt_KC0") #připojí se na token přes discord api
