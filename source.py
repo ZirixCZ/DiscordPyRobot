@@ -11,19 +11,18 @@ async def on_ready():
     print("The bot is ready!")
     await client.change_presence(activity=discord.Game("yo wuddap"))
 
-@client.command()
+@client.command(aliases=["Hello"])
 async def hello(ctx):
     await ctx.send('world')
 
-@client.command(aliases=["GH"])
+@client.command(aliases=["GH", "gh"])
 async def GitHub(ctx):
     await ctx.send('https://github.com/ZirixCZ/DiscordPyRobot')
 
-@client.command()
+@client.command(aliases=["Meme", "mm"])
 async def meme(ctx):
     memes = ["69","420","https://imgur.com/a/C6sONwG"] #memes pro random choice
     await ctx.send(random.choice(memes))
 
 #this is our secret token ok, dont loose it
-client.run("NzI0MDAyODMzMTQ5NDYwNTkx.Xu58Aw.Guk_uwMxOFC5oqcqnzdNoAQcAnU") #připojí se na token přes discord api
-
+client.run("NzI0MDAyODMzMTQ5NDYwNTkx.XvJxIg.4HqXv_UrDykJzPF-8NY0WNt_KC0") #připojí se na token přes discord api
