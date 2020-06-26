@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 import random
 
-client = commands.Bot(command_prefix = '.')
+client = commands.Bot(command_prefix = 'getme.')
 
 #this will tell us if the bot connected to the server (respektive jestli máme správný token omegalulw)
 @client.event
@@ -24,7 +24,7 @@ async def meme(ctx):
     memes = ["69","420","https://imgur.com/a/C6sONwG"] #memes pro random choice
     await ctx.send(random.choice(memes))
 
-@client.command(aliases=["Getmehelp", "gmh", "Gmh"]) #help prikaz keby chceli vidiet commandy
+@client.command(aliases=["helppls", "Helppls", "HelpPls"]) #help prikaz keby chceli vidiet commandy
 async def GetMeHelp(ctx):
     await ctx.send("`Github = ukáže link na GitHub repository\n meme = náhodny meme`")
 
