@@ -7,6 +7,7 @@ from giphy_client.rest import ApiException
 from pprint import pprint
 
 client = commands.Bot(command_prefix = 'getme ')
+token = 'NzI0MDAyODMzMTQ5NDYwNTkx.Xu52Lg.XTg1VTGMaetmydQ4_UEr1yTW0pY'
 
 @client.event
 async def on_ready():
@@ -19,4 +20,4 @@ for filename in os.listdir(r'python\discord\membot\cogs'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
 #this is our secret token ok, dont loose it
-client.run("NzI0MDAyODMzMTQ5NDYwNTkx.Xu58Aw.Guk_uwMxOFC5oqcqnzdNoAQcAnU") #připojí se na token přes discord api
+client.run(token)
