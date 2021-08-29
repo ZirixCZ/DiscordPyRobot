@@ -7,7 +7,7 @@ from giphy_client.rest import ApiException
 from pprint import pprint
 
 client = commands.Bot(command_prefix = 'getme ')
-token = 'NzI0MDAyODMzMTQ5NDYwNTkx.Xu52Lg.XTg1VTGMaetmydQ4_UEr1yTW0pY'
+token = 'hidingthissoicanmakeitpublic'
 
 @client.event
 async def on_ready():
